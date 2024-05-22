@@ -1,0 +1,337 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#navegador {
+    z-index: 12;
+    position: fixed;
+}
+a{
+    cursor:pointer;
+    
+}
+header {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    column-gap: 2%;
+
+    width: 100%;
+    height: 44vw;
+
+    background: linear-gradient(to right, rgb(20, 140, 220), rgb(17, 54, 73));
+
+    #btMenu {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 13;
+        grid-column-end: 14;
+
+        display: inline-block;
+    }
+
+    #text1 {
+        grid-row-start: 8;
+        grid-row-end: 13;
+        grid-column-start: 2;
+        grid-column-end: 9;
+
+        background-color: black;
+        color: white;
+    }
+
+}
+
+#navbar {
+    z-index: 10;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 2%;
+    width: 100%;
+    height: 8.8vw;
+    background-color: rgba(225, 173, 143, 0.7);
+
+    #logo {
+        background-color: black;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    #linknav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 7;
+        grid-column-end: 14;
+
+        a {
+            margin-right: 5px;
+        }
+    }
+}
+
+main {
+    background-color: dimgrey;
+}
+
+.pessoas{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(63, 1fr);
+    column-gap: 2%;
+
+    width: 100%;
+    height: 184vw;
+    
+    .profs1{
+        grid-row-start: 5;
+        grid-row-end: 17;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .profs2{
+        grid-row-start: 18;
+        grid-row-end: 30;
+    }
+    .cole{
+        grid-row-start: 34;
+        grid-row-end: 46;
+    }
+    .nde{
+        grid-row-start: 50;
+        grid-row-end: 62;
+    }
+
+    #prof1{
+        grid-column-start: 2;
+        grid-column-end: 6;
+
+        background-color: cyan;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+    }
+
+    #prof2{
+        grid-column-start: 6;
+        grid-column-end: 10;
+
+        background-color: cyan;
+    }
+
+    #prof3{
+        grid-column-start: 10;
+        grid-column-end:14;
+
+        background-color: cyan;
+    }
+    
+    #prof4{
+        grid-column-start: 2;
+        grid-column-end: 6;
+
+        background-color: cyan;
+        
+        display: flex;
+
+        justify-content: center;
+        align-items: end;
+    }
+
+    #prof5{
+        grid-column-start: 6;
+        grid-column-end: 10;
+
+        background-color: cyan;
+    }
+
+    #prof6{
+        grid-column-start: 10;
+        grid-column-end:14;
+
+        background-color: cyan;
+    }
+    #cole1{
+        grid-column-start: 2;
+        grid-column-end: 6;
+
+        background-color: cyan;
+        
+        display: flex;
+
+        justify-content: center;
+        align-items: end;
+    }
+
+    #cole2{
+        grid-column-start: 6;
+        grid-column-end: 10;
+
+        background-color: cyan;
+    }
+
+    #cole3{
+        grid-column-start: 10;
+        grid-column-end:14;
+
+        background-color: cyan;
+    }
+    #nde1{
+        grid-column-start: 2;
+        grid-column-end: 6;
+
+        background-color: cyan;
+        
+        display: flex;
+
+        justify-content: center;
+        align-items: end;
+    }
+
+    #nde2{
+        grid-column-start: 6;
+        grid-column-end: 10;
+
+        background-color: cyan;
+    }
+
+    #nde3{
+        grid-column-start: 10;
+        grid-column-end:14;
+
+        background-color: cyan;
+    }
+    #textMedio{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 14;
+
+        background-color: aquamarine;
+    }
+    #textMedio2{
+        grid-row-start: 31;
+        grid-row-end: 33;
+        grid-column-start: 2;
+        grid-column-end: 14;
+
+        background-color: aquamarine;
+    }
+    #textMedio3{
+        grid-row-start: 47;
+        grid-row-end: 49;
+        grid-column-start: 2;
+        grid-column-end: 14;
+
+        background-color: aquamarine;
+    }
+}
+.card-body{
+
+    background-color: blueviolet;
+    margin-top: 100px;
+    position: relative;
+    bottom:0;
+    width: 100%;
+    transition: 3s;
+    opacity: .6;
+   
+    } h2{
+        margin-bottom: 50px;
+        position:relative;
+        bottom: 0;
+        
+        
+      }
+      #for{
+        justify-content:center;
+        align-items: bottom;
+
+      }
+      .textinho{
+        opacity:0;
+       transition: all 0.5s;
+        
+       }
+       .profs1:hover .card-body .textinho{
+        transition-delay: 0.5s;
+        opacity: 0.8;
+        
+       } @keyframes myfirst{
+         from {bottom: 0px; }
+         to {bottom:50px;}
+       }
+         
+         .profs1:hover .card-body{
+            animation-delay: 2s;
+            
+            bottom:50px;opacity: .8;
+            transform: translateY(-30%);
+            
+          }
+
+footer {
+
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 2%;
+
+    width: 100%;
+    height: 17.5vw;
+
+    background: linear-gradient(45°, red, orange);
+
+    #logoalt{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+
+        background-color: aqua;
+
+    }
+
+    #linkinst{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 5;
+        grid-column-end: 11;
+
+        background-color: aqua;
+
+    }
+
+    #redesoc{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 12;
+        grid-column-end: 14;
+
+        background-color: aqua;
+
+    }
+
+    #altores{
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 2;
+        grid-column-end: 14;
+
+        background-color: aqua;
+
+    }
+}
