@@ -75,9 +75,16 @@ if (isset($_GET['Consulta']) && (isset($_GET['Logado']))) {
     <link rel="stylesheet" href="../style/style.css">
     <title>Faleconosco</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        :root{
+            --font1: font-family: "Roboto", sans-serif;
+        }
+
         body {
-            width: 100vw;
-            height: 100vh;
+            font-family: var(--font1);
+            max-width: 100vw;
+            min-height: 100vh;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, 1fr);
